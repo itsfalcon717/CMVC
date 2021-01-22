@@ -1,0 +1,5 @@
+c:\users\adler\documents\visual studio 2015\Projects\practica\model.entity\bin\Debug\model.entity.dll
+c:\users\adler\documents\visual studio 2015\Projects\practica\model.entity\bin\Debug\model.entity.pdb
+c:\users\adler\documents\visual studio 2015\Projects\practica\model.entity\obj\Debug\model.entity.csprojResolveAssemblyReference.cache
+c:\users\adler\documents\visual studio 2015\Projects\practica\model.entity\obj\Debug\model.entity.dll
+c:\users\adler\documents\visual studio 2015\Projects\practica\model.entity\obj\Debug\model.entity.pdb

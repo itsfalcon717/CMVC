@@ -1,0 +1,35 @@
+﻿@model List<model.entity.usuario>
+@{
+    ViewBag.Title = "Inicio";
+}
+<div class="container">
+    <div>
+        <a class="btn btn-primary" href="~/usuario/create">Nuevo</a>
+    </div>
+    <div class="row">
+        <table class="table">    
+         <tr class="btn-primary ">
+             <th class="text-center">Codigo</th>
+             <th class="text-center">Nombre</th>
+             <th class="text-center">Apellido</th>
+             <th class="text-center">Telefono</th>
+             <th colspan="3" class="text-center">Operaciones</th>
+          </tr>
+       
+    @foreach (var usuario in Model)
+            {
+           <tr>
+            <td>@usuario.Id_user</td>
+            <td>@usuario.Nombre</td>
+            <td>@usuario.Apellido</td>
+            <td>@usuario.Telefono</td> 
+               <td><a href="~/usuario/find/@usuario.Id_user" class="btn btn-info">View</a></td>
+               <td><a href="~/usuario/create/@usuario.Id_user" class="btn btn-warning">Edit</a></td>
+               <td><a href="~/usuario/delete/@usuario.Id_user" class="btn btn-danger">Delete</a></td>
+          </tr>
+           }
+        
+        
+        </table>
+    </div>
+</div>

@@ -1,0 +1,51 @@
+﻿@model model.dao.usuarioDao
+@{
+    ViewBag.Title = "Update";
+}
+
+
+
+<div>
+    <h1>@ViewBag.mensajeInicio</h1>
+</div>
+
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Id_user, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Id_user, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Apellido, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Apellido, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-6">
+                @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+        <div class="form-actions col-md-offset-2">
+            <input class="btn btn-primary" type="submit" name="btnGuardar" value="Guardar" />
+            @Html.ActionLink("Regresar al Listado", "Inicio")
+
+        </div>
+    </div>
+}
+<div>
+    @ViewBag.mensajeError
+
+</div>
+
+
